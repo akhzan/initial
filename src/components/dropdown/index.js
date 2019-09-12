@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './dropdown.scss'
+
 const Dropdown = ({ title, options, onClickItem }) => {
   return (
     <div className="dropdown">
