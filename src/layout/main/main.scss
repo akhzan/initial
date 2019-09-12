@@ -1,0 +1,36 @@
+@import '../../styles/modules/color';
+@import '../../styles/modules/constants';
+@import '../../styles/modules/responsive';
+
+.main__header {
+  height: 80px;
+  padding: 40px $padding-big 0 $padding-big;
+  @include respond-to(s) {
+    padding: 40px $padding-medium 0 $padding-medium;
+  }
+  @include respond-to(xs) {
+    padding: 40px $padding-small 0 $padding-small;
+  }
+  h3 {
+    margin: 0;
+    color: white;
+  }
+}
+
+.main__content {
+  padding: 0 $padding-big;
+  @include respond-to(s) {
+    padding: 0 $padding-medium;
+  }
+  @include respond-to(xs) {
+    padding: 0 $padding-small;
+  }
+}
+
+.main__top-bg {
+  position: absolute;
+  background-color: $primary-color;
+  height: 150px;
+  width: 100%;
+  z-index: -1;
+}
