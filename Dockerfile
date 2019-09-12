@@ -13,4 +13,4 @@ FROM nginx:1.15.8-alpine
 COPY --from=builder /work/build /usr/share/nginx/html
 EXPOSE 80
 RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
-RUN nginx -g "daemon off;"
+CMD ["nginx", "-g", "daemon off;"]
